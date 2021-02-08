@@ -1,0 +1,20 @@
+{
+  "name": "git-rmanguinho",
+  "version": "1.0.0",
+  "description": "> Link: https://www.youtube.com/playlist?list=PL9aKtVrF05DzbNiE7jcm7s6z6Lg-u72Rq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasDantas/git-rmanguinho.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasDantas/git-rmanguinho/issues"
+  },
+  "homepage": "https://github.com/ThomasDantas/git-rmanguinho#readme"
+}

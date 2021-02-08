@@ -39,25 +39,36 @@
 
 ## Comandos - Aula 2
 
-      --------------- INIT ------------------
-    $ git init // iniciar repositorio local
+      --------------- COMMIT ------------------
+    $ git status // arquivos modificados (M - modificado, A - adicionado, ? - desconhecido)
 
-    --------------- CLONE ------------------
-    $ git clone // clonar um repositorio
+    $ git add (fileName) ou (.) // . adiciona otodos
 
-    --------------- REMOTE -V ------------------
-    $ git remote -v // mostra repositorios remotos
+    $ git add --all // adicionar todos os arquivos de todos os diretorios
 
-    --------------- REMOTE ADD ------------------
-    $ git add remote add (apelido, ex: origin) (url) // adicionar repositorio remoto
+    $ git commit -m "mensagem" // mensagem a ser commitada
 
-    --------------- CONFIG SYSTEM ------------------
-    $ git config --system --edit // config do sistema
+    $ git commit --amend --no-edit // commitado junto ao comite anterior
 
-    --------------- CONFIG USER ------------------
-    $ git config --global --edit // config do usuario
+    $ git log // mostra todos os commits
 
-    --------------- CONFIGS OPEN VSCODE ------------------
-    $ git config --global core.editor code // abrir configs no vscode
+- Criar atalhos (alias)
+
+      --------------- ALHIAS ------------------
+      $ git config --global --edit // configs pessoais do usuario
+
+      [user]
+        name = your_name
+        email = your_email
+      [credential]
+        helper = store
+      [core]
+        editor = code
+      [alias]
+        s = !git status -s
+        c = !git add --all && git commit -m
+
+        $ git s // git status -s
+        $ git c "message" // adicionar e depois comita
 
 ---
