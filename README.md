@@ -99,6 +99,8 @@
 
     $ git push origin master --follow-tags // envia todas as tags anotadas
 
+    $ git push --delete origin "1.0" // remove tag do servidor
+
 - Enviar tags por padrao no push
 
       [user]
