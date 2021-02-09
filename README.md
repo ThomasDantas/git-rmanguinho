@@ -11,35 +11,26 @@
 
 ## Comandos - Aula 1
 
-    --------------- INIT ------------------
     $ git init // iniciar repositorio local
 
-    --------------- CLONE ------------------
     $ git clone // clonar um repositorio
 
-    --------------- REMOTE -V ------------------
     $ git remote -v // mostra repositorios remotos
 
-    --------------- REMOTE ADD ------------------
     $ git add remote add (apelido, ex: origin) (url) // adicionar repositorio remoto
 
-    --------------- CONFIG SYSTEM ------------------
     $ git config --system --edit // config do sistema
 
-    --------------- CONFIG USER ------------------
     $ git config --global --edit // config do usuario
 
-     --------------- CONFIG LOCAL ------------------
     $ git config --local --edit // config local projeto
 
-    --------------- CONFIGS OPEN VSCODE ------------------
     $ git config --global core.editor code // abrir configs no vscode
 
 ---
 
 ## Comandos - Aula 2
 
-      --------------- COMMIT ------------------
     $ git status // arquivos modificados (M - modificado, A - adicionado, ? - desconhecido)
 
     $ git add (fileName) ou (.) // . adiciona otodos
@@ -82,6 +73,34 @@
 ---
 
 ## Comandos - Aula 3
+
+    $ git log --oneline // mostra logs em uma linha
+
+    $ git log  --pretty=format:'%H' // mostra apenas a hash do log do commit
+
+    $ git log  --pretty=format:'%h' // mostra a hash resumida
+
+    $ git log  --pretty=format:'%cn' // mostra o nome da pessoa que commitou
+
+    $ git log --pretty=format:'%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr' // %C(blue) - cor; %h - hash redusida; %d - branch atual; %s - msg commit; %cn - nome da pessoa que commitou; %cr - data do commit;
+
+    $ git tag 1.0 // adiciona uma tag
+
+    $ git tag // lista tags
+
+    $ git show 1.0 // nome da tag e mostra informacoes do commit
+
+    $ git tag -d 1.0 // remove tag
+
+    $ git tag 1.0 -m "realease 1.0" // tag anotada
+
+    $ git tag -a "1.0" -m "realease 1.0" 227c809 // adicionar tag a um commit
+
+    $ git push origin master --tags // envia todas as tags para o servidor
+
+    $ git push origin master --follow-tags // envia todas as tags anotadas
+
+### Padrao Commits
 
 > Convetional Commits - https://www.conventionalcommits.org/en/v1.0.0/#summary
 
