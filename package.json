@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThomasDantas/git-rmanguinho/issues"
   },
-  "homepage": "https://github.com/ThomasDantas/git-rmanguinho#readme"
+  "homepage": "https://github.com/ThomasDantas/git-rmanguinho#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.0.0"
+  }
 }
