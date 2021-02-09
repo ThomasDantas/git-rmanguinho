@@ -52,6 +52,14 @@
 
     $ git log // mostra todos os commits
 
+    $ git stash // voltar para como estava no ultimo commit
+
+    $ git stash list // mostra lista de stash
+
+    $ git stash pop // voltar para para not staged, e remove do stash
+
+    $ git stash clear // limpa stash
+
 - Criar atalhos (alias)
 
       --------------- ALHIAS ------------------
