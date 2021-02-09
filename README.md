@@ -53,7 +53,6 @@
 
 - Criar atalhos (alias)
 
-      --------------- ALHIAS ------------------
       $ git config --global --edit // configs pessoais do usuario
 
       [user]
@@ -99,6 +98,22 @@
     $ git push origin master --tags // envia todas as tags para o servidor
 
     $ git push origin master --follow-tags // envia todas as tags anotadas
+
+- Enviar tags por padrao no push
+
+      [user]
+        name = ThomasDantas
+        email = thomas@paipe.co
+      [credential]
+        helper = store
+      [core]
+        editor = code
+      [alias]
+        s = !git status -s
+        c = !git add --all && git commit -m
+        l = !git log --pretty=format:'%C(blue)%h %C(red)%d %C(yellow)%s - %C(cyan)%cn, %C(green)%cr'
+      [push]
+        followTags = true
 
 ### Padrao Commits
 
