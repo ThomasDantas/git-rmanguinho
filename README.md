@@ -160,3 +160,23 @@
           Brief summary of the change in present tense. Not capitalized. No period at the end.
 
 ---
+
+## Comandos - Aula 4
+
+    $ git reset file? // volta para o estado anterior, file opcional
+
+    $ git reset 9b952ba --[parameter] // voltar para o commit especifico;
+
+    $ git reset HEAD~1 --[parameter] // 1 numero referente aos commits anteriores;
+
+    --soft = remove todos os commits acima e volta os arquivos para o estado anterior;
+    --mixed = default, volta para o estado anterior de dar `git add`;
+    --hard = desfaz todas as alteracoes nos arquivos;
+
+    $ git reset --hard // volta os arquivos para o estado original, apenas para arquivos que ja foram commitados;
+
+    $ git revert [hash]  // modifica apenas commits, reverte commits acima e gera um novo commit;
+
+    $ git revert HEAD~1 --no-commit // nao gera um commit automatico
+
+---
