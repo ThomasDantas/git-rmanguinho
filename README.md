@@ -175,7 +175,7 @@
 
     $ git reset --hard // volta os arquivos para o estado original, apenas para arquivos que ja foram commitados;
 
-    $ git revert [hash]  // modifica apenas commits, reverte commits acima e gera um novo commit;
+    $ git revert [hash]  // modifica apenas commits, mantem commits acima e gera um novo commit;
 
     $ git revert HEAD~1 --no-commit // nao gera um commit automatico
 
