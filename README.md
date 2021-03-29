@@ -180,3 +180,29 @@
     $ git revert HEAD~1 --no-commit // nao gera um commit automatico
 
 ---
+
+## Comandos - Aula 5
+
+    $ git checkout file // desfaz a modificacao do arquivo, apenas para arquivos conhecidos pelo git, pois precisa de um estado anterior
+
+    $ git checkout tag // passar o nome da tag, volta para o commit/branch
+
+    $ git checkout nome-branch // passar o nome da branch para mudar
+
+    $ git checkout -b nome-branch // cria uma nova branch
+
+    $ git merge nome-branch-source // nome da branch que vai ser mergiada em cima da atual
+
+    $ git clean -n // clean = remover arquivos que estao como untracked, nao remove dentro de pastas, -n mostra quais arquivos serao removidos
+
+    $ git clean -f // forca para remover os arquivos como untracked
+
+    $ git clean -d // remove arquivos destro de pastas
+
+    $ git rm file // remove arquivos que ja estao tracked/conhecidos pelo git
+
+    $ git rm pasta -r // remove uma pasta inteira com o -r
+
+    $ git rm file --cached // deixa de `trackear`(untrack) o arquivo
+
+---
