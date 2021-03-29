@@ -206,3 +206,20 @@
     $ git rm file --cached // deixa de `trackear`(untrack) o arquivo
 
 ---
+
+## Comandos - Aula 6
+
+    $ git config --global --edit // adicionar no editor --wait (code --wait)
+
+    $ git rebase -i HEAD~4 // numero = ultimos de commits para mostrar
+
+      rework: renomear commit
+      squash: agrupar commits
+      fixup: junta commits no de cima, mas nao se altera o texto do commit
+      edit: voltar os arquivos para unstaged (`git reset HEAD`) depois (`git rebase --continue`)
+
+    $ git reflog // mostra todos os logs/commits
+
+    $ git reset --hard numero-commit // volta para esse commit
+
+---
